@@ -22,6 +22,7 @@
     "packages/*"
   ],
   "dependencies": {
+    "@databuddy/sdk": "^1.4.0",
     "motion": "^12.23.7"
   }
 }

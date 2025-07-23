@@ -11,7 +11,6 @@ export default function Tunnel() {
         camera={{ position: [0, 0, 7], fov: 30 }}
         style={{ width: "100%", height: "100%", display: "block" }}
       >
-        <color attach="background" args={["#0a0a0a"]} />
         <TunnelScene />
       </Canvas>
     </div>
