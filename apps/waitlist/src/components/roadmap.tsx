@@ -59,32 +59,34 @@ const getStatusColor = (status: RoadmapStatus): string => {
 
 export default function Roadmap() {
   return (
-    <div className="w-full max-w-2xl mx-auto p-6">
-      <div className="text-center mb-8">
-        <FadeUpWord className="justify-center text-4xl font-bold tracking-tighter mb-2">
+    <div className="w-full max-w-2xl mx-auto p-4 sm:p-6 lg:p-8">
+      <div className="text-center mb-6 sm:mb-8">
+        <FadeUpWord className="justify-center text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tighter mb-2">
           Roadmap
         </FadeUpWord>
       </div>
 
-      <div className="space-y-4">
+      <div className="space-y-3 sm:space-y-4">
         {roadmapItems.map((item, index) => (
           <BlurReveal
             delay={0.1 * index}
-            className="flex items-start gap-4 p-4 rounded-lg border border-border hover:bg-muted/10 transition-colors"
+            className="flex items-start gap-3 sm:gap-4 p-3 sm:p-4 rounded-lg border border-border hover:bg-muted/10 transition-colors"
           >
             <div className="mt-0.5">
               <StatusIcon status={item.status} />
             </div>
             <div className="flex-1">
               <div className="flex items-center gap-2 mb-1">
-                <h3 className="font-medium">{item.title}</h3>
+                <h3 className="font-medium text-sm sm:text-base">
+                  {item.title}
+                </h3>
                 <span
                   className={`text-xs capitalize ${getStatusColor(item.status)}`}
                 >
                   {item.status === "in-progress" ? "in progress" : item.status}
                 </span>
               </div>
-              <p className="text-sm text-muted-foreground">
+              <p className="text-xs sm:text-sm text-muted-foreground">
                 {item.description}
               </p>
             </div>
@@ -92,7 +94,7 @@ export default function Roadmap() {
         ))}
       </div>
 
-      <div className="mt-8 text-center text-sm text-muted-foreground">
+      <div className="mt-6 sm:mt-8 text-center text-xs sm:text-sm text-muted-foreground">
         <p>This is an open source project. Want to contribute?</p>
         <Link
           href="https://github.com/1w6ts/relaykit"

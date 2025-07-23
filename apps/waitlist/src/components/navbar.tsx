@@ -23,12 +23,12 @@ export function Navbar() {
     <div className="flex w-full justify-center">
       <NavigationMenu
         viewport={false}
-        className="flex justify-between items-center p-4 max-w-4xl w-full"
+        className="flex justify-between items-center p-3 sm:p-4 max-w-7xl w-full"
       >
         <Link href="/">
-          <WordmarkLogo className="h-6" />
+          <WordmarkLogo className="h-5 sm:h-6" />
         </Link>
-        <NavigationMenuList className="flex gap-2">
+        <NavigationMenuList className="flex gap-1 sm:gap-2">
           {/**
  * 
  *           <NavigationMenuItem>
@@ -62,7 +62,7 @@ export function Navbar() {
               className={navigationMenuTriggerStyle()}
             >
               <Link href="https://github.com/tryrelaykit" target="_blank">
-                <FaGithub />
+                <FaGithub className="h-4 sm:h-5 w-4 sm:w-5" />
               </Link>
             </NavigationMenuLink>
           </NavigationMenuItem>
@@ -72,7 +72,7 @@ export function Navbar() {
               className={navigationMenuTriggerStyle()}
             >
               <Link href="https://x.com/tryrelaykit" target="_blank">
-                <FaXTwitter />
+                <FaXTwitter className="h-4 sm:h-5 w-4 sm:w-5" />
               </Link>
             </NavigationMenuLink>
           </NavigationMenuItem>
