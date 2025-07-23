@@ -15,6 +15,8 @@ import {
 } from "@/components/ui/navigation-menu";
 import Image from "next/image";
 import WordmarkLogo from "./marketing/wordmark";
+import { FaGithub } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 export function Navbar() {
   return (
@@ -27,7 +29,9 @@ export function Navbar() {
           <WordmarkLogo className="h-6" />
         </Link>
         <NavigationMenuList className="flex gap-2">
-          <NavigationMenuItem>
+          {/**
+ * 
+ *           <NavigationMenuItem>
             <NavigationMenuLink
               asChild
               className={navigationMenuTriggerStyle()}
@@ -49,6 +53,27 @@ export function Navbar() {
               className={navigationMenuTriggerStyle()}
             >
               <Link href="/about">About</Link>
+            </NavigationMenuLink>
+          </NavigationMenuItem>
+ */}
+          <NavigationMenuItem>
+            <NavigationMenuLink
+              asChild
+              className={navigationMenuTriggerStyle()}
+            >
+              <Link href="https://github.com/tryrelaykit" target="_blank">
+                <FaGithub />
+              </Link>
+            </NavigationMenuLink>
+          </NavigationMenuItem>
+          <NavigationMenuItem>
+            <NavigationMenuLink
+              asChild
+              className={navigationMenuTriggerStyle()}
+            >
+              <Link href="https://x.com/tryrelaykit" target="_blank">
+                <FaXTwitter />
+              </Link>
             </NavigationMenuLink>
           </NavigationMenuItem>
         </NavigationMenuList>
