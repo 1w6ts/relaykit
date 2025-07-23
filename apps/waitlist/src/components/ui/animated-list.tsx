@@ -104,7 +104,7 @@ function InternalAnimatedListItem({
       variants={itemVariants}
       initial="initial"
       animate={target}
-      transition={getTransition()}
+      transition={getTransition() as import("framer-motion").Transition}
       onAnimationComplete={handleAnimationComplete}
     >
       {children}

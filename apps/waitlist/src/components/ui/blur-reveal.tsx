@@ -16,7 +16,7 @@ export function BlurReveal({
   children,
   delay = 0,
   duration = 1,
-}: BlurRevealProps): JSX.Element {
+}: BlurRevealProps): React.JSX.Element {
   const spanRef = React.useRef<HTMLSpanElement | null>(null);
   const isInView: boolean = useInView(spanRef, { once: true });
 

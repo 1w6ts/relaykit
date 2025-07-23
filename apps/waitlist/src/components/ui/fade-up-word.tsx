@@ -26,10 +26,7 @@ export function FadeUpWord({
   return (
     <Component
       ref={ref}
-      className={cn(
-        "font-semibold text-4xl tracking-tight flex flex-wrap gap-[0.5rem]",
-        className
-      )}
+      className={cn("tracking-tight flex flex-wrap gap-[0.5rem]", className)}
       {...props}
     >
       {children.split(" ").map((word, i) => (

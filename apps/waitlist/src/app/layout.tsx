@@ -31,7 +31,13 @@ export default function RootLayout({
         >
           <Navbar />
           {children}
-          <Databuddy clientId={process.env.DATABUDDY_CLIENT_ID!} />
+          <Databuddy
+            clientId="aam1guvf-79SAWEPQUmJI"
+            trackInteractions={true}
+            trackScrollDepth={true}
+            trackBounceRate={true}
+            enableBatching={true}
+          />
         </ThemeProvider>
       </body>
     </html>

@@ -13,53 +13,20 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
-
-const components: { title: string; href: string; description: string }[] = [
-  {
-    title: "Alert Dialog",
-    href: "/docs/primitives/alert-dialog",
-    description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
-  },
-  {
-    title: "Hover Card",
-    href: "/docs/primitives/hover-card",
-    description:
-      "For sighted users to preview content available behind a link.",
-  },
-  {
-    title: "Progress",
-    href: "/docs/primitives/progress",
-    description:
-      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
-  },
-  {
-    title: "Scroll-area",
-    href: "/docs/primitives/scroll-area",
-    description: "Visually or semantically separates content.",
-  },
-  {
-    title: "Tabs",
-    href: "/docs/primitives/tabs",
-    description:
-      "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
-  },
-  {
-    title: "Tooltip",
-    href: "/docs/primitives/tooltip",
-    description:
-      "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
-  },
-];
+import Image from "next/image";
+import WordmarkLogo from "./marketing/wordmark";
 
 export function Navbar() {
   return (
-    <div className="flex justify-center w-full">
-      <NavigationMenu viewport={false} className="p-4">
-        <NavigationMenuList>
-          <div className="mr-4">
-            <h1 className="font-bold tracking-tighter">RelayKit</h1>
-          </div>
+    <div className="flex w-full justify-center">
+      <NavigationMenu
+        viewport={false}
+        className="flex justify-between items-center p-4 max-w-4xl w-full"
+      >
+        <Link href="/">
+          <WordmarkLogo className="h-6" />
+        </Link>
+        <NavigationMenuList className="flex gap-2">
           <NavigationMenuItem>
             <NavigationMenuLink
               asChild
