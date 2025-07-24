@@ -29,7 +29,7 @@ export function Navbar() {
           <WordmarkLogo className="h-5 sm:h-6" />
         </Link>
         <NavigationMenuList className="flex gap-1 sm:gap-2">
-          {/**
+          {/**  
  * 
  *           <NavigationMenuItem>
             <NavigationMenuLink
@@ -61,7 +61,10 @@ export function Navbar() {
               asChild
               className={navigationMenuTriggerStyle()}
             >
-              <Link href="https://github.com/tryrelaykit" target="_blank">
+              <Link
+                href="https://github.com/tryrelaykit/relaykit"
+                target="_blank"
+              >
                 <FaGithub className="h-4 sm:h-5 w-4 sm:w-5" />
               </Link>
             </NavigationMenuLink>
