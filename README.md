@@ -2,10 +2,6 @@
   <img src="branding/opengraph.png" alt="RelayKit Banner" width="100%" />
 </p>
 
-<p align="center">
-  <img src="branding/wordmark.svg" alt="Relaykit Logo" height="80" />
-</p>
-
 # Relaykit
 
 **Relaykit is a collaborative toolbar that streamlines website development for teams.**
