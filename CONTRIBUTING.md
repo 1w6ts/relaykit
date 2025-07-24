@@ -1,64 +1,41 @@
 # Contributing to Relaykit
 
-Thank you for your interest in contributing to Relaykit! We welcome contributions from everyone. Please follow these guidelines to help us maintain a high-quality, collaborative project.
-
-## Table of Contents
-
-- [Code of Conduct](#code-of-conduct)
-- [Getting Started](#getting-started)
-- [How to Contribute](#how-to-contribute)
-- [Code Style](#code-style)
-- [Pull Request Process](#pull-request-process)
-- [Reporting Issues](#reporting-issues)
-- [Community](#community)
-
-## Code of Conduct
-
-This project follows a [Code of Conduct](CODE_OF_CONDUCT.md) to foster an open and welcoming environment. Please read it before participating.
-
-## Getting Started
-
-1. **Fork the repository** and clone it locally.
-2. **Install dependencies** using the workspace package manager (e.g., `pnpm install`).
-3. **Run the development environment**:
-   ```sh
-   pnpm dev
-   ```
-   Or see the README for app-specific instructions.
+Thank you for your interest in improving Relaykit! We value contributions from everyone—VPs, designers, engineers, and all collaborators.
 
 ## How to Contribute
 
-- **Bug Fixes:** Open an issue describing the problem and submit a pull request with a fix.
-- **Features:** Open an issue to discuss your idea before submitting a pull request.
-- **Documentation:** Improvements to documentation are always welcome.
+- **Bug reports & feature requests:** Please use [GitHub Issues](https://github.com/tryrelaykit/relaykit/issues).
+- **Pull requests:** Fork the repo, create a feature branch, and open a PR with a clear description.
+- **Discussions:** For ideas or questions, use [GitHub Discussions](https://github.com/tryrelaykit/relaykit/discussions).
 
 ## Code Style
 
-- Use the provided ESLint and Prettier configurations.
-- Write clear, concise commit messages.
-- Use TypeScript for all code.
-- Follow the file and folder structure conventions.
+- Use the provided ESLint and Prettier configs:
+  ```sh
+  pnpm lint
+  pnpm format
+  ```
+- All code should be in TypeScript.
 
-## Pull Request Process
+## Running Locally
 
-1. Fork the repo and create your branch from `main`.
-2. Ensure your code passes all linting and tests:
+1. Install dependencies:
    ```sh
-   pnpm lint
-   pnpm test
+   pnpm install
    ```
-3. Add or update documentation as needed.
-4. Open a pull request with a clear description of your changes.
-5. Participate in the code review process and address feedback.
+2. Start the dev environment:
+   ```sh
+   pnpm dev
+   ```
 
-## Reporting Issues
+## Testing
 
-- Use the issue tracker to report bugs or request features.
-- Provide as much detail as possible (steps to reproduce, environment, screenshots, etc.).
+- Please ensure your changes do not break existing functionality.
+- Add tests if you introduce new features (if applicable).
 
-## Community
+## Community Standards
 
-- Be respectful and inclusive.
-- For questions or discussions, use GitHub Discussions or the community chat (link in README if available).
+- Be respectful and constructive.
+- See our [Code of Conduct](CODE_OF_CONDUCT.md) for more details.
 
-Thank you for helping make Relaykit better!
+Thank you for helping make Relaykit better for everyone!

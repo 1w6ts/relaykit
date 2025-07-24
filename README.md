@@ -1,90 +1,50 @@
-# Relaykit Monorepo
+# Relaykit
 
-Relaykit is a modern, open source monorepo for building scalable web applications with Next.js, TypeScript, and a shared UI system. It is designed for maintainability, rapid development, and a great developer experience.
+**Relaykit is a collaborative toolbar that streamlines website development for teams.**
 
-## Table of Contents
+Relaykit enables fast feedback loops between VPs, designers, engineers, and other stakeholders, helping teams build and iterate on websites more efficiently.
 
-- [Project Structure](#project-structure)
-- [Getting Started](#getting-started)
-- [Development](#development)
-- [Building](#building)
-- [Contributing](#contributing)
-- [Community](#community)
-- [License](#license)
+## Features
 
-## Project Structure
+- Real-time feedback and collaboration tools
+- Integrates with design and engineering workflows
+- Modular, extensible architecture
+- Built for modern web teams
+
+## Monorepo Structure
 
 ```
-apps/
-  docs/      # Documentation site (Next.js)
-  web/       # Main web app (Next.js)
-  waitlist/  # Waitlist/marketing app (Next.js)
-packages/
-  ui/                # Shared React UI components
-  eslint-config/     # Shared ESLint config
-  typescript-config/ # Shared TypeScript config
+apps/         # End-user applications (web, docs, waitlist)
+packages/     # Shared UI components, configs, tooling
 ```
 
-- Each app/package has its own README with specific instructions.
-- All code is written in TypeScript.
-
-## Getting Started
+## Quickstart
 
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/your-org/relaykit.git
+   git clone https://github.com/tryrelaykit/relaykit.git
    cd relaykit
    ```
 2. **Install dependencies:**
    ```sh
-   pnpm install
+   bun install
    ```
-3. **Run the development environment:**
+3. **Start development:**
    ```sh
-   pnpm dev
+   bun dev
    ```
-   Or see each app's README for details.
 
-## Development
-
-- Use [Turborepo](https://turborepo.org/) for running, building, and testing across the monorepo.
-- Lint and format code with ESLint and Prettier:
-  ```sh
-  pnpm lint
-  pnpm format
-  ```
-- Run tests (if available):
-  ```sh
-  pnpm test
-  ```
-
-## Building
-
-To build all apps and packages:
-
-```sh
-pnpm build
-```
-
-Or use Turborepo directly:
-
-```sh
-turbo build
-```
+See individual app READMEs for more details.
 
 ## Contributing
 
-We welcome contributions! Please read our [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
-
-## Community
-
-- [GitHub Issues](https://github.com/your-org/relaykit/issues) — Report bugs or request features
-- [Discussions](https://github.com/your-org/relaykit/discussions) — Ask questions, share ideas
+We welcome contributions from the community! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 ## License
 
 Relaykit is [MIT licensed](LICENSE).
 
----
+## Links
 
-_This project uses Turborepo, Next.js, TypeScript, and a modular, scalable architecture for professional open source development._
+- [Issues](https://github.com/tryrelaykit/relaykit/issues)
+- [Discussions](https://github.com/tryrelaykit/relaykit/discussions)
