@@ -59,7 +59,7 @@ const getStatusColor = (status: RoadmapStatus): string => {
 
 export default function Roadmap() {
   return (
-    <div className="w-full max-w-2xl mx-auto p-4 sm:p-6 lg:p-8">
+    <div className="w-full max-w-2xl mx-auto p-4 sm:p-6 lg:p-8 px-4 sm:px-6 lg:px-8">
       <div className="text-center mb-6 sm:mb-8">
         <FadeUpWord className="justify-center text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tighter mb-2">
           Roadmap

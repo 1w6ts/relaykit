@@ -9,15 +9,17 @@ export default function Hero() {
       <div className="absolute inset-0 z-0">
         <AnimatedGradient />
       </div>
-      <FadeUpWord className="font-semibold text-3xl sm:text-4xl lg:text-5xl tracking-tighter text-center max-w-4xl">
-        Stop losing feedback in Slack threads.
-      </FadeUpWord>
-      <FadeUpWord className="text-sm sm:text-md tracking-tight font-light text-center max-w-2xl mt-4 sm:mt-6">
-        Ship 31% faster, by making your designers and engineers, not hunt for
-        screenshots.
-      </FadeUpWord>
-      <div className="mt-6 sm:mt-8">
-        <Waitlist />
+      <div className="relative z-10 flex flex-col items-center text-center">
+        <FadeUpWord className="font-semibold text-2xl sm:text-2xl md:text-3xl lg:text-4xl tracking-tighter">
+          Stop losing feedback in Slack threads.
+        </FadeUpWord>
+        <FadeUpWord className="text-sm sm:text-md tracking-tight font-light mt-2 sm:mt-2 max-w-2xl">
+          Ship 31% faster, by making your designers and engineers, not hunt for
+          screenshots.
+        </FadeUpWord>
+        <div className="mt-6 sm:mt-8">
+          <Waitlist />
+        </div>
       </div>
     </div>
   );

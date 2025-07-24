@@ -23,7 +23,7 @@ export function Navbar() {
     <div className="flex w-full justify-center">
       <NavigationMenu
         viewport={false}
-        className="flex justify-between items-center p-3 sm:p-4 max-w-7xl w-full"
+        className="flex justify-between items-center p-3 sm:p-4 max-w-3xl w-full"
       >
         <Link href="/">
           <WordmarkLogo className="h-5 sm:h-6" />
