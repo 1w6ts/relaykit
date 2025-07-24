@@ -1,18 +1,8 @@
 import type { Metadata } from "next";
-import { Geist } from "next/font/google";
-import "./globals.css";
-import { Navbar } from "@/components/navbar";
-import { ThemeProvider } from "@/components/theme-provider";
-import { Databuddy } from "@databuddy/sdk";
-import opengraph from "./opengraph.png";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+import opengraph from "../opengraph.png";
 
 export const metadata: Metadata = {
-  title: "relaykit.co",
+  title: "Auth | relaykit.co",
   description:
     "Stop losing feedback in Slack threads. Ship 31% faster by letting your designers and engineers focus on their job, instead of hunting screenshots.",
   keywords: [
@@ -39,7 +29,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://relaykit.co",
-    title: "Waitlist | relaykit.co",
+    title: "Auth | relaykit.co",
     description:
       "Stop losing feedback in Slack threads. Ship 31% faster by letting your designers and engineers focus on their job, instead of hunting screenshots.",
     siteName: "relaykit.co",
@@ -79,8 +69,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={`${geistSans.className} antialiased`}>
+    <html lang="en">
+      <body>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -96,21 +86,7 @@ export default function RootLayout({
             }),
           }}
         />
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          disableTransitionOnChange
-          enableSystem
-        >
-          {children}
-          <Databuddy
-            clientId="aam1guvf-79SAWEPQUmJI"
-            trackInteractions={true}
-            trackScrollDepth={true}
-            trackBounceRate={true}
-            enableBatching={true}
-          />
-        </ThemeProvider>
+        {children}
       </body>
     </html>
   );
