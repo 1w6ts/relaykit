@@ -33,7 +33,7 @@ export const auth = betterAuth({
     },
   },
   plugins: [
-    organization(),
+    organization({}),
     polarsh({
       client: polar,
       createCustomerOnSignUp: true,
