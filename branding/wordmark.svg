@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 229.77 52.56">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #231f20;
+      }
+
+      .cls-3 {
+        letter-spacing: -.05em;
+      }
+
+      .cls-4 {
+        letter-spacing: -.05em;
+      }
+
+      .cls-5 {
+        letter-spacing: -.06em;
+      }
+
+      .cls-6 {
+        letter-spacing: -.08em;
+      }
+
+      .cls-7 {
+        letter-spacing: -.05em;
+      }
+
+      .cls-2 {
+        font-family: Geist-SemiBold, Geist;
+        font-size: 48px;
+        font-variation-settings: 'wght' 600;
+        font-weight: 600;
+      }
+
+      .cls-8 {
+        letter-spacing: -.08em;
+      }
+
+      .cls-9 {
+        letter-spacing: -.05em;
+      }
+    </style>
+  </defs>
+  <g id="Layer_2-2" data-name="Layer 2">
+    <g>
+      <path class="cls-1" d="M0,0v12.37h17.88c.82-.02,5.21-.02,8.8,3.45,3.46,3.35,3.7,7.55,3.73,8.41h12.37c.02-1.64-.06-10.67-7.25-17.65C30,1.22,23.52.23,21.39,0H0Z"/>
+      <polygon class="cls-1" points="0 24.23 30.41 24.23 42.78 48.24 30.58 48.24 24.57 36.24 12.2 36.24 12.2 48.24 0 48.24 0 24.23"/>
+    </g>
+    <text class="cls-2" transform="translate(52.94 41.04)"><tspan class="cls-5" x="0" y="0">R</tspan><tspan class="cls-9" x="30.14" y="0">e</tspan><tspan class="cls-3" x="56.11" y="0">l</tspan><tspan class="cls-8" x="68.11" y="0">a</tspan><tspan class="cls-7" x="92.35" y="0">y</tspan><tspan class="cls-4" x="117.55" y="0">K</tspan><tspan class="cls-6" x="147.17" y="0">i</tspan><tspan class="cls-7" x="156.34" y="0">t</tspan></text>
+  </g>
+</svg>
