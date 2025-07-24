@@ -23,6 +23,8 @@
   ],
   "dependencies": {
     "@databuddy/sdk": "^1.4.0",
-    "motion": "^12.23.7"
+    "@tailwindcss/vite": "^4.1.11",
+    "motion": "^12.23.7",
+    "tailwindcss": "^4.1.11"
   }
 }
