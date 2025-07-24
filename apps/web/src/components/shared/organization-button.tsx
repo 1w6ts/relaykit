@@ -14,6 +14,7 @@ import {
   CommandList,
 } from "../ui/command";
 import { cn } from "@/lib/utils";
+import { toast } from "sonner";
 
 export default function OrganizationButton() {
   const { data: organizations } = authClient.useListOrganizations();
@@ -32,8 +33,9 @@ export default function OrganizationButton() {
         organizationId: String(organization.id),
       });
       setOpen(false);
+      toast.success(`Switched to ${organization.name}`);
     } catch (error) {
-      // Optionally handle error (e.g., toast)
+      toast("An error has occured. Please try again later.");
     } finally {
       setIsLoading(false);
     }

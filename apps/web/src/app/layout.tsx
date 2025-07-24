@@ -5,6 +5,7 @@ import { Navbar } from "@/components/navbar";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Databuddy } from "@databuddy/sdk";
 import opengraph from "./opengraph.png";
+import { Toaster } from "@/components/ui/sonner";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -102,6 +103,7 @@ export default function RootLayout({
           disableTransitionOnChange
           enableSystem
         >
+          <Toaster />
           {children}
           <Databuddy
             clientId="aam1guvf-79SAWEPQUmJI"
